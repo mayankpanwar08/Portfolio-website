@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More of me </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/skills.html">Skills</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                    <li><a href="/more.html">More of Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="menubar" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+
+            <div class="infocontainer">
+                <div class="devinfo">
+                    <h1>ABOUT ME</h1>
+                    <p>I am currently in my third year of studying B.Tech in Computer Science at Raj Kumar Goel
+                        Institute of Technology Ghaziabad.</p>
+                    <br>
+                    <h1>AREA OF INTEREST</h1>
+                    <p>Web Development and Data Structure and Algorithms</p>
+                    <br>
+                    <h1>EDUCATION</h1>
+                    <br>
+                    <ol>
+
+                        <li>
+                            <h3>B.Tech in CSE (AKTU)</h3>
+                        </li>
+                        <li>
+                            <h3>Intermediate 2020 (CBSE)</h3>
+                            <ul>
+                                <li>Passed with 82%</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>High School 2018 (CBSE)</h3>
+                            <ul>
+                                <li>Passed with 86%</li>
+                            </ul>
+                        </li>
+
+
+
+                    </ol>
+
+                    <br>
+                    <h1>LANGUAGES KNOWN</h1>
+                    <p>English and Hindi</p>
+                    <br>
+                    <h1>HOBBIES</h1>
+                    <ul>
+                        <li>Reading Books</li>
+                        <li>Listening to Music</li>
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+        document.querySelector('.menubar').addEventListener("click", () => {
+            document.querySelector('.sidebar').classList.toggle('sidebarGo');
+        }
+        )
+    </script>
+
+
+
+</body>
+
+</html>

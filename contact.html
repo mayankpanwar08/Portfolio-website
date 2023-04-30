@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/skills.html">Skills</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                    <li><a href="/more.html">More of Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menubar" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="contact">
+            <div class="box1">
+                <h2>Contact</h2>
+            </div>
+            <div class="forms">
+                <form action="backend.php">
+                    <label for="name"></label>
+                    <div>
+
+                        First Name:<input type="text" name="First name" id="name">
+                    </div>
+                    <br>
+                    <label for="father name"></label>
+                    <div>
+                        Last Name:<input type="text" id="Last name">
+                    </div>
+                    <br>
+                    <label for="email"></label>
+                    <div>
+                        Email:<input type="email" name="Email" id="email">
+                    </div>
+                    <br>
+                    <div>
+                        Date:<input type="date" name="Date" id="date">
+
+                    </div>
+                    <br>
+                    <div>
+                        Linked In Id :<input type="id" name="link" id="link">
+                    </div>
+                    <br>
+                    <div>
+                        Want to work on a project with me?<input type="checkbox" name="" id="checkbox">
+                    </div>
+                    <br>
+                    <div>
+                        Gender:Male<input type="radio" name="gender" id="gender">Female<input type="radio" name="gender"
+                            id="gender">
+                    </div>
+                    <br>
+
+                    <div>
+                        <textarea name="explain" id="explain" cols="35" rows="5"
+                            placeholder="explain about yourself"></textarea>
+                    </div>
+                    <br>
+                    <label for="reason to contact">Reason</label>
+                    <div>
+                        <select name="Reason" id="Reason">
+                            <option value="choose">choose</option>
+                            <option value=" No purpose"> No purpose</option>
+                            <option value=" want to join">want to join</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="btn">
+                        <button type="submit">submit now</button>
+                        <button type="reset">reset</button>
+                    </div>
+            </div>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+        document.querySelector('.menubar').addEventListener("click", () => {
+            document.querySelector('.sidebar').classList.toggle('sidebarGo');
+        }
+        )
+    </script>
+
+
+
+</body>
+
+</html>

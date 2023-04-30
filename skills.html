@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/skills.html">Skills</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                    <li><a href="/more.html">More of Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="menubar" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="mainskill">
+                <div class="progress">
+                    <div class="title">
+                        <h3>C,C++</h3>
+                    </div>
+                    <div class="barline">
+                        <div class="countbar" data-percentNumber="30"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="title">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="barline">
+                        <div class="countbar" data-percentNumber="30"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="title">
+                        <h3>web developer</h3>
+                    </div>
+                    <div class="barline">
+                        <div class="countbar" data-percentNumber="50"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="title">
+                        <h3>Tools(git, github)</h3>
+                    </div>
+                    <div class="barline">
+                        <div class="countbar" data-percentNumber="40"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="title">
+                        <h3>Teamwork</h3>
+                    </div>
+                    <div class="barline">
+                        <div class="countbar" data-percentNumber="80"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="title">
+                        <h3>javascript</h3>
+                    </div>
+                    <div class="barline">
+                        <div class="countbar" data-percentNumber="30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let numberPercent = document.querySelectorAll('.countbar')
+            let getPercent = Array.from(numberPercent)
+
+            getPercent.map((items) => {
+                let startCount = 0
+                let progressBar = () => {
+                    startCount++
+                    items.innerHTML = `<h3>${startCount}%</h3>`
+                    items.style.width = `${startCount}%`
+                    if (startCount == items.dataset.percentnumber) {
+                        clearInterval(stop)
+                    }
+                }
+                let stop = setInterval(() => {
+                    progressBar()
+                }, 25)
+            })
+
+
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+
+            document.querySelector('.menubar').addEventListener("click", () => {
+                document.querySelector('.sidebar').classList.toggle('sidebarGo');
+            }
+            )
+
+        </script>
+
+
+
+</body>
+
+</html>
