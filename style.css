@@ -11,7 +11,7 @@
     position: absolute;
     font-family: 'Roboto Slab', serif;
     height: 100vh;
-    background-color: #87CBB9;
+    background-color: #9DB2BF;
     transition: transform 0.3s ease-in;
 }
 
@@ -27,11 +27,11 @@
 
 .sidebar nav li a {
     text-decoration: none;
-    color: #577D86;
+    color: #27374D;
 }
 
 .sidebar nav li a:hover {
-    color: #569DAA;
+    color: #526D82;
 }
 
 .menubar {
@@ -91,14 +91,14 @@
 
 .hello {
     font-size: 3em;
-    color: #87CBB9;
+    color: #9DB2BF;
 
 }
 
 .name {
     font-size: 3em;
     font-family: 'Sigmar', cursive;
-    color: #569DAA;
+    color: #526D82;
 
 }
 
@@ -106,7 +106,7 @@
     font-size: 2em;
     font-family: monospace;
     font-weight: 900;
-    color: #87CBB9;
+    color: #9DB2BF;
 
 }
 
@@ -114,7 +114,7 @@
     margin: 40px 3px;
     padding: 10px;
     border-radius: 10px;
-    background-color: #569DAA;
+    background-color: #526D82;
     color: whitesmoke;
     font-weight: bold;
     font-size: large;
@@ -126,7 +126,7 @@
 }
 
 .btn button:hover {
-    background-color: #87CBB9;
+    background-color: #9DB2BF;
 
 }
 
@@ -142,7 +142,7 @@
 
 .right {
     width: 90vw;
-    background-color: #B9EDDD;
+    background-color:#DDE6ED;
     margin: auto;
     margin-top: 100px;
 }
@@ -176,7 +176,7 @@
 
 .countbar {
     height: 12px;
-    background: #577D86;
+    background: #27374D;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     position: relative;
@@ -186,7 +186,7 @@
     position: absolute;
     right: -19px;
     top: -35px;
-    background: #569DAA;
+    background: #526D82;
     padding: 4px 6px;
     font-size: 16px;
     font-weight: 400;
@@ -200,14 +200,14 @@
     left: 50%;
     width: 11px;
     height: 11px;
-    background: #569DAA;
+    background: #526D82;
     transform: rotate(45deg) translateX(-60%);
 }
 
 .contact {
     text-align: center;
     width: 600px;
-    background-color: #87CBB9;
+    background-color: #9DB2BF;
     margin: auto;
     margin-top: 80px;
 }
@@ -218,17 +218,17 @@
 }
 
 body {
-    background-color: #B9EDDD;
+    background-color: #DDE6ED;
 }
 
 .box1 {
-    background-color: #569DAA;
+    background-color: #526D82;
     color: white;
     border-radius: 50px;
 }
 
 .devinfo h1 {
-    color: #569DAA;
+    color: #526D82;
 
 }
 
